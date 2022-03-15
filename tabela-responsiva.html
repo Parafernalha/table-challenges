@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tag colgroup">
+    <title>tabela responsiva</title>
+
+    <!-- Tabelas responsiva utilizando a propriedade overflow -->
+
+</head>
+
+<style>
+        table
+        {
+            text-align: center;
+            margin: 50px;
+            border-collapse: collapse;
+        
+            margin: auto;
+        }
+        th
+        {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td
+        {
+            padding: 10px;
+            border: 2px solid black;
+            
+        }
+        #cNome
+        {
+            background-color: aqua;
+        }
+        #cSexo
+        {
+            background-color: yellowgreen;
+        }
+        #cIdade
+        {
+            background-color: cornflowerblue;
+        }
+        #cProfissao
+        {
+            background-color: lightblue;
+        }
+        #container
+        {
+            overflow-x: scroll;
+        }
+        p
+        {
+            text-align: justify;
+        }
+        h1
+        {
+            text-align: center;
+        }
+
+</style>
+
+
+<body>
+    <h1>Responsividade em tabelas</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi ea id illum, officiis provident perspiciatis aperiam cupiditate, tempore perferendis officia ratione vitae nesciunt voluptates, quod inventore neque nemo possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi ea id illum, officiis provident perspiciatis aperiam cupiditate, tempore perferendis officia ratione vitae nesciunt voluptates, quod inventore neque nemo possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi ea id illum, officiis provident perspiciatis aperiam cupiditate, tempore perferendis officia ratione vitae nesciunt voluptates, quod inventore neque nemo possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi ea id illum, officiis provident perspiciatis aperiam cupiditate, tempore perferendis officia ratione vitae nesciunt voluptates, quod inventore neque nemo possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi ea id illum, officiis provident perspiciatis aperiam cupiditate, tempore perferendis officia ratione vitae nesciunt voluptates, quod inventore neque nemo possimus.
+
+    </p>
+    <div id="container"> <!-- div utilizada na responsividade-->
+        <table>
+            <colgroup>
+            <col id="cNome">
+            <col id="cSexo">
+            <col id="cIdade">
+            <col id="cProfissao">
+            </colgroup>
+            <caption>Informações pessoais aleatórias</caption>
+                <thead>
+                        <th>Nome</th>
+                        <th>Sexo</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                        <th>Cidade</th>
+                        <th>Horoscopo</th>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>Douglas de Oliveira Fernandes</td>
+                            <td>Masculino</td>
+                            <td>20</td>
+                            <td>Programador</td>
+                            <td>Curitiba</td>
+                            <td>Libra</td>
+                        </tr>
+                        <tr>
+                            <td>Teresa Cristina Ramos</td>
+                            <td>Feminino</td>
+                            <td>32</td>
+                            <td>Médica</td>
+                            <td>Florianopolis</td>
+                            <td>Touro</td>
+                        </tr>
+        
+                        <tr>
+                            <td>Carlos Luiz Silva</td>
+                            <td>Masculino</td>
+                            <td>12</td>
+                            <td>Estudante</td>
+                            <td>Manaus</td>
+                            <td>Escorpião</td>
+                        </tr>
+                        <tr>
+                            <td>Rogério Lima</td>
+                            <td>Masculino</td>
+                            <td>45</td>
+                            <td>Empresário</td>
+                            <td>Rio de Janeiro</td>
+                            <td>Sagitário</td>
+                        </tr>
+                        <tr>
+                            <td>Fernanda Gomes</td>
+                            <td>Feminino</td>
+                            <td>23</td>
+                            <td>Auxiliar administrativo</td>
+                            <td>Salvador</td>
+                            <td>Peixes</td>
+                        </tr>
+                        <tr>
+                            <td>Raimundo Biabock</td>
+                            <td>Masculino</td>
+                            <td>29</td>
+                            <td>Artista</td>
+                            <td>Porto Alegre</td>
+                            <td>Virgem</td>
+                        </tr>
+                </tbody>
+        </table>
+    </div>
+</body>
+</html>
